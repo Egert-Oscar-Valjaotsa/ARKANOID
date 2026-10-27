@@ -19,7 +19,7 @@ let game = {
         window.addEventListener("keydown", e => {
             if (e.keyCode === 37) {
                 this.platform.dx = -this.platform.velocity;
-            }else if (e.keyCode === 39) {
+            } else if (e.keyCode === 39) {
                 this.platform.dx = this.platform.velocity;
             }
         });
@@ -54,11 +54,7 @@ let game = {
         }
     },
     update() {
-        window.requestAnimationFrame(() => {
-            this.update();
-            this.render();
-            this.run();
-        });
+        this.platform.move();
     },
     run() {
         window.requestAnimationFrame(() => {
@@ -70,7 +66,7 @@ let game = {
     render() {
         this.ctx.drawImage(this.sprites.background, 0, 0);
         this.ctx.drawImage(this.sprites.ball, 0, 0, this.ball.width, this.ball.height, this.ball.x, this.ball.y, this.ball.width, this.ball.height);
-        this.ctx.drawImage(this.sprites.platform, this.platform.x, this.ball.y);
+        this.ctx.drawImage(this.sprites.platform, this.platform.x, this.platform.y);
         this.renderBlocks();
     },
     renderBlocks() {
