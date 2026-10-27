@@ -1,5 +1,5 @@
 
-
+FAAAAAAAAAAAAAAAAAAAAKE
 
 let game = {
     start: function() {
@@ -14,4 +14,27 @@ let game = {
     }
 };
 
+FAAAAAAAAAAAAAAAAAAAAKE
 
+
+let = game {
+    ctx: null,
+    platform: null,
+    ball: null,
+    sprites: {
+        background: null,
+        ball: null,
+        platform: null
+    },
+    init: function() {
+        this.ctx = document.getElementById("mycanvas").getContext("2d");
+    },
+    preload(callback) {
+        let loaded = 0
+        let required = Object.keys(this.sprites).length;
+
+        for(let)
+
+            FAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAKE
+
+FAAAAAAAAAAAAAAAAAAAAKE
